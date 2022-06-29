@@ -6,6 +6,8 @@
     menu: document.querySelector("[data-menu]"),
   };
 
+  
+
   refs.openMenuBtn.addEventListener("click", toggleMenu);
   refs.closeMenuBtn.addEventListener("click", toggleMenu);
 

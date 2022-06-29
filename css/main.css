@@ -136,8 +136,6 @@ body {
 
 .header-contacts__mail,
 .header-contacts__phone {
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,15 +157,30 @@ body {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .header-contacts__mail,
+  .header-contacts__phone {
+    padding: 32px 0px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-contacts__mail {
+    margin-bottom: 10px;
+  }
+}
+
 .header-contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
 }
 
-.header-contacts__item + .header-contacts__item {
-  margin-left: 50px;
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+  }
 }
 
 .page-header__item {
@@ -217,8 +230,10 @@ body {
   background-color: var(--accent-color);
 }
 
-.page-header {
-  border-bottom: 1px solid #ECECEC;
+@media screen and (min-width: 768px) {
+  .page-header {
+    border-bottom: 1px solid #ECECEC;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -235,9 +250,6 @@ body {
   top: 0;
   right: 0;
   padding: 15px 10px 48px 40px;
-}
-
-.flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,6 +260,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 999;
 }
 
 .menu-open {
@@ -267,6 +280,8 @@ body {
   border: none;
   margin-left: auto;
   cursor: pointer;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-open:hover, .menu-open:focus {
@@ -294,6 +309,8 @@ body {
   border: none;
   margin-left: auto;
   cursor: pointer;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-close:hover, .menu-close:focus {
@@ -311,6 +328,8 @@ body {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-list__link:focus, .mobile-menu-list__link:hover {
@@ -790,10 +809,17 @@ body {
 .logo {
   font-family: var(--secondary-font-family);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .color-logo {
@@ -1267,8 +1293,8 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1276,6 +1302,13 @@ body {
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close {
@@ -1357,11 +1390,17 @@ body {
 }
 
 .checkbox-text {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-  margin-left: 14px;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-text {
+    font-size: 14px;
+    margin-left: 14px;
+  }
 }
 
 .checkbox-link {
