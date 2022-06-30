@@ -226,16 +226,24 @@
         <h2 class="work-title">Наша команда</h2>
         <ul class="main-team__flex list container">
           <li class="team-flex">
-            <img
-              class="work-pic"srcset="
-                ./images/team/img.jpg 1x,
-                ./images/team/img-team-2x.jpg 2x
-                "
+            
+            <picture>
+              <source media="(max-width: 767px)" srcset="
+                                            ./images/team/img-1x-mob.jpg 1x,
+                                            ./images/team/img-2x-mob.jpg 2x" type="image/jpg" />
+              <source media="(min-width: 768px)" srcset="
+                                          ./images/team/img-1x-tabl.jpg 1x,
+                                          ./images/team/img-2x-tabl.jpg 2x" type="image/jpg" />
+              <source media="(min-width: 1200px)" srcset="./images/team/img.jpg 1x, ./images/team/img-team-2x.jpg 2x"
+                type="image/jpg" />
+                <img
+              class="work-pic"
               src="./images/team/img.jpg"
               alt="Игорь Демьяненко"
               width="450"
               height="260"
             />
+            </picture>
             <div class="team-padding">
               <h3 class="work-team">Игорь Демьяненко</h3>
               <p lang="en" class="work-position">Product Designer</p>
@@ -273,17 +281,24 @@
           </li>
 
           <li class="team-flex">
+            <picture>
+              <source media="(max-width: 767px)" srcset="
+                                                        ./images/team/img-1-1x-mob.jpg 1x,
+                                                        ./images/team/img-1-2x-mob.jpg 2x" type="image/jpg" />
+              <source media="(min-width: 768px)" srcset="
+                                                      ./images/team/img-1-1x-tabl.jpg 1x,
+                                                      ./images/team/img-1-2x-tabl.jpg 2x" type="image/jpg" />
+              <source media="(min-width: 1200px)" srcset="./images/team/img-1.jpg 1x, ./images/team/img-team-1-2x.jpg 2x"
+                type="image/jpg" />
             <img
               class="work-pic"
-              srcset="
-                ./images/team/img-1.jpg 1x,
-                ./images/team/img-team-1-2x.jpg 2x
-                "
+              
               src="./images/team/img-1.jpg"
               alt="Ольга Репина"
               width="450"
               height="260"
             />
+            </picture>
             <div class="team-padding">
               <h3 class="work-team">Ольга Репина</h3>
               <p lang="en" class="work-position">Frontend Developer</p>
@@ -321,17 +336,23 @@
           </li>
 
           <li class="team-flex">
+            <picture>
+              <source media="(max-width: 767px)" srcset="
+                                                        ./images/team/img-2-1x-mob.jpg 1x,
+                                                        ./images/team/img-2-2x-mob.jpg 2x" type="image/jpg" />
+              <source media="(min-width: 768px)" srcset="
+                                                      ./images/team/img-2-1x-tabl.jpg 1x,
+                                                      ./images/team/img-2-2x-tabl.jpg 2x" type="image/jpg" />
+              <source media="(min-width: 1200px)" srcset="./images/team/img-2.jpg 1x, ./images/team/img-team-2-2x.jpg 2x"
+                type="image/jpg" />
             <img
               class="work-pic"
-              srcset="
-                ./images/team/img-2.jpg 1x,
-                ./images/team/img-team-2-2x.jpg 2x
-                "
               src="./images/team/img-2.jpg"
               alt="Николай Тарасов"
               width="450"
               height="260"
             />
+            </picture>
             <div class="team-padding">
               <h3 class="work-team">Николай Тарасов</h3>
               <p lang="en" class="work-position">Marketing</p>
@@ -369,17 +390,23 @@
           </li>
 
           <li class="team-flex">
+            <picture>
+              <source media="(max-width: 767px)" srcset="
+                                                                    ./images/team/img-3-1x-mob.jpg 1x,
+                                                                    ./images/team/img-3-2x-mob.jpg 2x" type="image/jpg" />
+              <source media="(min-width: 768px)" srcset="
+                                                                  ./images/team/img-3-1x-tabl.jpg 1x,
+                                                                  ./images/team/img-3-2x-tabl.jpg 2x" type="image/jpg" />
+              <source media="(min-width: 1200px)" srcset="./images/team/img-3.jpg 1x, ./images/team/img-team-3-2x.jpg 2x"
+                type="image/jpg" />
             <img
               class="work-pic"
-              srcset="
-                ./images/team/img-3.jpg 1x,
-                ./images/team/img-team-3-2x.jpg 2x
-                "
               src="./images/team/img-3.jpg"
               alt="Михаил Ермаков"
               width="450"
               height="260"
             />
+            </picture>
             <div class="team-padding">
               <h3 class="work-team">Михаил Ермаков</h3>
               <p lang="en" class="work-position">UI Designer</p>
