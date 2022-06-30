@@ -24,7 +24,9 @@
     <header class="page-header">
       <div class="page-header__flex container">
         <nav class="page-header__nav">
-          <a lang="en" class="link logo page-header__logo" href="./index.html"><span class="color-logo">Web</span>Studio</a>
+          <a lang="en" class="link logo page-header__logo" href="./index.html"
+            ><span class="color-logo">Web</span>Studio</a
+          >
           <div class="menu-hidden">
             <ul class="list menu flex">
               <li class="page-header__item">
@@ -39,23 +41,25 @@
             </ul>
           </div>
         </nav>
-    
+
         <!--Contacts-->
-    
+
         <ul class="list header-contacts menu-hidden">
           <li class="header-contacts__item">
             <a class="link header-contacts__mail" href="mailto:info@devstudio.com">
               <svg class="header-contacts__icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-mail"></use>
               </svg>
-              info@devstudio.com</a>
+              info@devstudio.com</a
+            >
           </li>
           <li class="header-contacts__item">
             <a class="link header-contacts__phone" href="tel:+380961111111">
               <svg class="header-contacts__icon" height="16" width="10">
                 <use href="./images/sprite.svg#icon-phone"></use>
               </svg>
-              +38 096 111 11 11</a>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
         <button class="menu-open" data-menu-open>
@@ -76,7 +80,11 @@
               <a class="mobile-menu-list__link link" href="./index.html">Студия</a>
             </li>
             <li class="mobile-menu-list__item">
-              <a class="mobile-menu-list__link link mobile-menu-list__link--current" href="./portfolio.html">Портфолио</a>
+              <a
+                class="mobile-menu-list__link link mobile-menu-list__link--current"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="mobile-menu-list__item">
               <a class="mobile-menu-list__link link" href="">Контакты</a>
@@ -84,15 +92,15 @@
           </ul>
         </div>
         <div class="mobile-menu-list__down">
-          <a class="mobile-menu-list__tell link" href="tel:+380961111111">
-            +38 096 111 11 11</a>
-          <a class="mobile-menu-list__mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <ul class="mobile-menu-list__social list ">
+          <a class="mobile-menu-list__tell link" href="tel:+380961111111"> +38 096 111 11 11</a>
+          <a class="mobile-menu-list__mail link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+          <ul class="mobile-menu-list__social list">
             <li class="mobile-menu-list__social-item"><a class="link" href="">Instagram</a></li>
             <li class="mobile-menu-list__social-item"><a class="link" href="">Twitter</a></li>
             <li class="mobile-menu-list__social-item"><a class="link" href="">Facebook</a></li>
             <li class="mobile-menu-list__social-item"><a class="link" href="">LinkedIn</a></li>
-    
           </ul>
         </div>
       </div>
@@ -123,17 +131,37 @@
             <li class="portfolio-item">
               <a class="hover-portfolio-item link" href="">
                 <div class="portfolio-cards">
-                  <img
-                    class="portfolio-pic"
-                    srcset="
-                ./images/portfolio/img.jpg 1x,
-                ./images/portfolio/img-2x.jpg 2x
-                "
-                    src="./images/portfolio/img.jpg"
-                    alt="ноутбук"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8-1x-mob.jpg 1x,
+                        ./images/portfolio/img-8-2x-mob.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1x-tabl.jpg 1x,
+                        ./images/portfolio/img-2x-tabl.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/img.jpg 1x, ./images/portfolio/img-2x.jpg 2x"
+                      type="image/jpg"
+                    />
+                    <img
+                      class="portfolio-pic"
+                      srcset="./images/portfolio/img.jpg 1x, ./images/portfolio/img-2x.jpg 2x"
+                      src="./images/portfolio/img.jpg"
+                      alt="ноутбук"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="portfolio-opacity">
                     <p class="portfolio-opacity-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -151,17 +179,26 @@
             <li class="portfolio-item">
               <a class="hover-portfolio-item link" href="">
                 <div class="portfolio-cards">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="
+                                          ./images/portfolio/img-1x-mob.jpg 1x,
+                                          ./images/portfolio/img-2x-mob.jpg 2x
+                                        " type="image/jpg" />
+                    <source media="(min-width: 768px)" srcset="
+                                          ./images/portfolio/img-1-1x-tabl.jpg 1x,
+                                          ./images/portfolio/img-1-2x-tabl.jpg 2x
+                                        " type="image/jpg" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-1.jpg 1x, ./images/portfolio/img-1-2x.jpg 2x"
+                      type="image/jpg" />
                   <img
                     class="portfolio-pic"
-                    srcset="
-                ./images/portfolio/img-1.jpg 1x,
-                ./images/portfolio/img-1-2x.jpg 2x
-                "
+                    srcset="./images/portfolio/img-1.jpg 1x, ./images/portfolio/img-1-2x.jpg 2x"
                     src="./images/portfolio/img-1.jpg"
                     alt=" игра в баскетбол"
                     width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="portfolio-opacity">
                     <p class="portfolio-opacity-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -179,17 +216,26 @@
             <li class="portfolio-item">
               <a class="hover-portfolio-item link" href="">
                 <div class="portfolio-cards">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="
+                                                            ./images/portfolio/img-1-1x-mob.jpg 1x,
+                                                            ./images/portfolio/img-1-2x-mob.jpg 2x
+                                                          " type="image/jpg" />
+                    <source media="(min-width: 768px)" srcset="
+                                                            ./images/portfolio/img-2-1x-tabl.jpg 1x,
+                                                            ./images/portfolio/img-2-2x-tabl.jpg 2x
+                                                          " type="image/jpg" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-2.jpg 1x, ./images/portfolio/img-2-2x.jpg 2x"
+                      type="image/jpg" />
                   <img
                     class="portfolio-pic"
-                    srcset="
-                ./images/portfolio/img-2.jpg 1x,
-                ./images/portfolio/img-2-2x.jpg 2x
-                "
+                    srcset="./images/portfolio/img-2.jpg 1x, ./images/portfolio/img-2-2x.jpg 2x"
                     src="./images/portfolio/img-2.jpg"
                     alt="рыба"
                     width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="portfolio-opacity">
                     <p class="portfolio-opacity-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -208,12 +254,20 @@
             <li class="portfolio-item">
               <a class="hover-portfolio-item link" href="">
                 <div class="portfolio-cards">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="
+                                                                              ./images/portfolio/img-2-1x-mob.jpg 1x,
+                                                                              ./images/portfolio/img-2-2x-mob.jpg 2x
+                                                                            " type="image/jpg" />
+                    <source media="(min-width: 768px)" srcset="
+                                                                              ./images/portfolio/img-3-1x-tabl.jpg 1x,
+                                                                              ./images/portfolio/img-3-2x-tabl.jpg 2x
+                                                                            " type="image/jpg" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-3.jpg 1x, ./images/portfolio/img-3-2x.jpg 2x"
+                      type="image/jpg" />
                   <img
                     class="portfolio-pic"
-                    srcset="
-                ./images/portfolio/img-3.jpg 1x,
-                ./images/portfolio/img-3-2x.jpg 2x
-                "
+                    srcset="./images/portfolio/img-3.jpg 1x, ./images/portfolio/img-3-2x.jpg 2x"
                     src="./images/portfolio/img-3.jpg"
                     alt="наушники"
                     width="450"
@@ -236,17 +290,26 @@
             <li class="portfolio-item">
               <a class="hover-portfolio-item link" href="">
                 <div class="portfolio-cards">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="
+                                                                                                ./images/portfolio/img-3-1x-mob.jpg 1x,
+                                                                                                ./images/portfolio/img-3-2x-mob.jpg 2x
+                                                                                              " type="image/jpg" />
+                    <source media="(min-width: 768px)" srcset="
+                                                                                                ./images/portfolio/img-4-1x-tabl.jpg 1x,
+                                                                                                ./images/portfolio/img-4-2x-tabl.jpg 2x
+                                                                                              " type="image/jpg" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-4.jpg 1x, ./images/portfolio/img-4-2x.jpg 2x"
+                      type="image/jpg" />
                   <img
                     class="portfolio-pic"
-                    srcset="
-                ./images/portfolio/img-4.jpg 1x,
-                ./images/portfolio/img-4-2x.jpg 2x
-                "
+                    srcset="./images/portfolio/img-4.jpg 1x, ./images/portfolio/img-4-2x.jpg 2x"
                     src="./images/portfolio/img-4.jpg"
                     alt="коробки"
                     width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="portfolio-opacity">
                     <p class="portfolio-opacity-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -264,17 +327,26 @@
             <li class="portfolio-item">
               <a class="hover-portfolio-item link" href="">
                 <div class="portfolio-cards">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="
+                    ./images/portfolio/img-4-1x-mob.jpg 1x,
+                    ./images/portfolio/img-4-2x-mob.jpg 2x
+                    " type="image/jpg" />
+                    <source media="(min-width: 768px)" srcset="
+                      ./images/portfolio/img-5-1x-tabl.jpg 1x,
+                      ./images/portfolio/img-5-2x-tabl.jpg 2x
+                      " type="image/jpg" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-5.jpg 1x, ./images/portfolio/img-5-2x.jpg 2x"
+                      type="image/jpg" />
                   <img
                     class="portfolio-pic"
-                    srcset="
-                ./images/portfolio/img-5.jpg 1x,
-                ./images/portfolio/img-5-2x.jpg 2x
-                "
+                    srcset="./images/portfolio/img-5.jpg 1x, ./images/portfolio/img-5-2x.jpg 2x"
                     src="./images/portfolio/img-5.jpg"
                     alt="монитор"
                     width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="portfolio-opacity">
                     <p class="portfolio-opacity-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -293,17 +365,26 @@
             <li class="portfolio-item">
               <a class="hover-portfolio-item link" href="">
                 <div class="portfolio-cards">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="
+                        ./images/portfolio/img-5-1x-mob.jpg 1x,
+                        ./images/portfolio/img-5-2x-mob.jpg 2x"
+                      type="image/jpg" />
+                    <source media="(min-width: 768px)" srcset="
+                      ./images/portfolio/img-6-1x-tabl.jpg 1x,
+                      ./images/portfolio/img-6-2x-tabl.jpg 2x"
+                      type="image/jpg" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-6.jpg 1x, ./images/portfolio/img-6-2x.jpg 2x"
+                      type="image/jpg" />
                   <img
                     class="portfolio-pic"
-                    srcset="
-                ./images/portfolio/img-6.jpg 1x,
-                ./images/portfolio/img-6-2x.jpg 2x
-                "
+                    srcset="./images/portfolio/img-6.jpg 1x, ./images/portfolio/img-6-2x.jpg 2x"
                     src="./images/portfolio/img-6.jpg"
                     alt="журнал"
                     width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="portfolio-opacity">
                     <p class="portfolio-opacity-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -321,17 +402,28 @@
             <li class="portfolio-item">
               <a class="hover-portfolio-item link" href="">
                 <div class="portfolio-cards">
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="
+                              ./images/portfolio/img-6-1x-mob.jpg 1x,
+                              ./images/portfolio/img-6-2x-mob.jpg 2x
+                              " type="image/jpg" />
+                    <source media="(min-width: 768px)"
+                      srcset="
+                                ./images/portfolio/img-7-1x-tabl.jpg 1x,
+                                ./images/portfolio/img-7-2x-tabl.jpg 2x
+                                " type="image/jpg" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-7.jpg 1x, ./images/portfolio/img-7-2x.jpg 2x"
+                      type="image/jpg" />
                   <img
                     class="portfolio-pic"
-                    srcset="
-                ./images/portfolio/img-7.jpg 1x,
-                ./images/portfolio/img-7-2x.jpg 2x
-                "
+                    srcset="./images/portfolio/img-7.jpg 1x, ./images/portfolio/img-7-2x.jpg 2x"
                     src="./images/portfolio/img-7.jpg"
                     alt="бирка"
                     width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="portfolio-opacity">
                     <p class="portfolio-opacity-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -349,17 +441,28 @@
             <li class="portfolio-item">
               <a class="hover-portfolio-item link" href="">
                 <div class="portfolio-cards">
+                  <picture>
+                    <source media="(max-width: 767px)"
+                      srcset="
+                                ./images/portfolio/img-7-1x-mob.jpg 1x,
+                                ./images/portfolio/img-7-2x-mob.jpg 2x"
+                      type="image/jpg" />
+                    <source media="(min-width: 768px)"
+                      srcset="
+                              ./images/portfolio/img-8-1x-tabl.jpg 1x,
+                              ./images/portfolio/img-8-2x-tabl.jpg 2x"
+                      type="image/jpg" />
+                    <source media="(min-width: 1200px)" srcset="./images/portfolio/img-8.jpg 1x, ./images/portfolio/img-8-2x.jpg 2x"
+                      type="image/jpg" />
                   <img
                     class="portfolio-pic"
-                    srcset="
-                ./images/portfolio/img-8.jpg 1x,
-                ./images/portfolio/img-8-2x.jpg 2x
-                "
+                    srcset="./images/portfolio/img-8.jpg 1x, ./images/portfolio/img-8-2x.jpg 2x"
                     src="./images/portfolio/img-8.jpg"
                     alt="работа на ноутбуке"
                     width="450"
                     height="294"
                   />
+                  </picture>
                   <div class="portfolio-opacity">
                     <p class="portfolio-opacity-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -453,9 +556,12 @@
         </div>
       </div>
     </footer>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
