@@ -1214,6 +1214,9 @@ body {
 
 .hover-portfolio-item {
   display: block;
+  display: flexbox;
+  height: 440px;
+  width: 354px;
   color: currentColor;
   -webkit-box-shadow: 0;
           box-shadow: 0;
