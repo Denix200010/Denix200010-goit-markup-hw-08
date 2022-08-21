@@ -3,13 +3,32 @@
     openModalBtn: document.querySelector("[data-modal-open]"),
     closeModalBtn: document.querySelector("[data-modal-close]"),
     modal: document.querySelector("[data-modal]"),
+    backdrop: document.querySelector('.backdrop'),
   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+  refs.openModalBtn.addEventListener("click", open);
+  refs.closeModalBtn.addEventListener("click", close);
+  refs.backdrop.addEventListener('click', onBackdropClick);
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
+  function onBackdropClick(event) {
+  if (event.currentTarget === event.target) {
+    close();
+  }
+  }
+  function onEscKeyPress(event) {
+    const isEscKey = event.code === 'Escape';
+    if (isEscKey) {
+      close();
+    }
+  }
+
+  function open() {
+    window.addEventListener('keydown', onEscKeyPress);
+    refs.modal.classList.remove("is-hidden");
+  }
+  function close() {
+    window.removeEventListener('keydown', onEscKeyPress);
+    refs.modal.classList.add('is-hidden');
   }
 })();
 (() => {
@@ -21,3 +40,6 @@
     );
   });
 })();
+
+
+
